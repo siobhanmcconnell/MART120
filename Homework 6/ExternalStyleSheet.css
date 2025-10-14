@@ -1,0 +1,29 @@
+body{
+    background-color:lavenderblush;
+}
+.page2 {background-image: url(cloudbackground.avif);
+background-size: 1900px 1280px;}
+.PageLink{
+    font-size: 20pt;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.ListItem{
+    font-size: 14pt;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslateblue;
+}
+
+#HomepageTitle{
+    font-size: 40pt;
+    display: block;
+    text-align: center;
+}
+#SecondPageTitle{
+    font-size: 40pt;
+    display: block;
+    text-align: center;
+    color: lavenderblush;
+}
