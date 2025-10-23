@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Contact Us</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="ExternalStyleSheet.css">
+
+<script>
+    function GetData()
+    {
+        var name = document.getElementById("NameEntry").value;
+        if (name=="") {NameEntry.style.backgroundColor = "lightcoral"; 
+          document.getElementById("NameEntry").focus();    
+        }
+        if (name!="") {NameEntry.style.backgroundColor = "white";}
+        
+        var email = document.getElementById("EmailEntry").value;
+        if (email=="") {EmailEntry.style.backgroundColor = "lightcoral";
+        document.getElementById("EmailEntry").focus(); 
+        }
+        if (email!="") {EmailEntry.style.backgroundColor = "white";}
+       
+        var checkBox = document.getElementById("AcceptYes");
+  if (checkBox.checked == true && name!="" && email!=""){
+    window.alert("Thanks for contacting us")
+  } 
+if(checkBox.checked == false) {
+  window.alert("Please accept terms and fill out all required fields")
+
+  }
+}
+
+</script>
+</head>
+<body>
+ <h1>Contact Us</h1>
+        <a href="McConnellPage1.html">Homepage</a>
+        <a href="page2.html">Story/Artwork</a><br><br>
+        <form action="McConnellHomework6.html" type="POST">
+            Name: <input type="text" id="NameEntry" required><br>
+            Email Address: <input type="text" id="EmailEntry" required><br>
+            Accept Terms of Agreement
+            <input type="checkbox" id="AcceptYes" value="true">Yes
+            <input type="checkbox" id="DeclineNo" value="false">No
+            <br><br>
+            <button class="btn btn-primary" id="mysubmit" type="submit" onclick="GetData();">Submit</button>
+        </form>
+        
+</body>
+</html>
